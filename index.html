@@ -131,7 +131,7 @@
           <div class="card-pattern"></div>
           <div class="card-inner" id="cardInner">
             <div class="card-face front" id="cardFront">
-              <div class="card-type-icon" id="cardTypeIcon">⚡</div>
+              <div class="card-type-icon"><img id="cardTypeImg" src="Risk.png" alt=""></div>
               <div class="card-front-header" id="cardHeader">
                 <span class="card-type-badge" id="cardBadge">Risk Scenario</span>
                 <h3 id="cardTitle">Your partner says condoms break the mood.</h3>
@@ -433,7 +433,7 @@ function renderCard() {
   document.getElementById('playingCard').classList.remove('flipped');
   const card = getCards()[gameIndex];
   document.getElementById('cardBadge').textContent = { risk: 'Risk Scenario', prevention: 'Prevention Option', myth: 'Myth Bust', decision: 'Decision Prompt' }[gameType];
-  document.getElementById('cardTypeIcon').textContent = card.icon;
+  document.getElementById('cardTypeImg').src = gameType.charAt(0).toUpperCase() + gameType.slice(1) + '.png';
   document.getElementById('cardTitle').textContent = card.title;
   document.getElementById('cardScenario').textContent = card.scenario;
   document.getElementById('cardPrompt').textContent = card.prompt;
