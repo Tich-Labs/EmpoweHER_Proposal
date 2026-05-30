@@ -315,7 +315,7 @@
   .cv-skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
   .cv-skills-grid div { font-size: 13px; color: #333; line-height: 1.6; padding: 6px 0; border-bottom: 1px solid #F5F5F5; }
   .cv-skills-grid strong { color: #111; font-family: 'DM Sans', sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
-  .cv-creds { display: grid; gap: 10px; }
+  .cv-creds { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
   .cv-cred { display: flex; gap: 12px; align-items: flex-start; padding: 10px 14px; background: #F8F6F3; border-radius: 8px; }
   .cv-cred-icon { font-size: 18px; flex-shrink: 0; width: 28px; text-align: center; padding-top: 1px; }
   .cv-cred strong { font-size: 13px; color: #111; font-family: 'DM Sans', sans-serif; display: block; margin-bottom: 2px; }
