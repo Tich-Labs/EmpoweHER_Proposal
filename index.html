@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EmpowHER CHOICE · Card Game Proposal · Naijeria Toweett</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Main navigation">
+  <a class="nav-logo" href="#" onclick="switchMain('proposal'); return false;">
+    <div class="nav-logo-mark">NT</div>
+    <span class="nav-logo-text">Naijeria Toweett</span>
+  </a>
+  <ul class="nav-links">
+    <li><a class="active" data-main="proposal" href="#" onclick="switchMain('proposal');return false;">Proposal</a></li>
+    <li><a data-main="cv" href="#" onclick="switchMain('cv');return false;">CV</a></li>
+    <li><a data-main="samples" href="#" onclick="switchMain('samples');return false;">Work Samples</a></li>
+  </ul>
+  <a class="nav-pdf-btn hidden" href="#" role="button" onclick="printDoc(document.querySelector('.nav-links a.active').dataset.main);return false;">↓ Download PDF</a>
+</nav>
+
+<nav class="subnav show" id="subnav" aria-label="Proposal sections">
+  <a class="active visited" data-sub="overview" href="#" onclick="switchSub('overview');return false;"><span class="step-num">1</span> Overview</a>
+  <span class="step-line"></span>
+  <a data-sub="challenge" href="#" onclick="switchSub('challenge');return false;"><span class="step-num">2</span> Challenge</a>
+  <span class="step-line"></span>
+  <a data-sub="demo" href="#" onclick="switchSub('demo');return false;"><span class="step-num">3</span> Live Demo</a>
+  <span class="step-line"></span>
+  <a data-sub="approach" href="#" onclick="switchSub('approach');return false;"><span class="step-num">4</span> Approach</a>
+  <span class="step-line"></span>
+  <a data-sub="deliverables" href="#" onclick="switchSub('deliverables');return false;"><span class="step-num">5</span> Deliverables</a>
+</nav>
+
+<main id="main-content">
+<!-- PROPOSAL SUB-PANELS -->
+<div id="panel-overview" class="panel coverletter-panel active has-subnav">
+  <div class="hero">
+    <div class="hero-tag">EmpowHER CHOICE · Consultancy Proposal · May 2026</div>
+    <h1 class="fade-up">Where AGYW <em>actually are</em><br>is not a card table.</h1>
+    <p class="hero-sub fade-up fade-up-2">A proposal to co-create, prototype, and deliver a hybrid digital-first HIV risk-assessment experience for adolescent girls and young women in Kenya, Uganda, and South Africa.</p>
+    <ul class="hero-sections fade-up fade-up-2">
+      <li><a href="#" onclick="switchSub('challenge');return false;">The Challenge</a> — MOSAIC research, AGYW insights &amp; evidence base</li>
+      <li><a href="#" onclick="switchSub('demo');return false;">Live Demo</a> — playable card game prototype in your browser</li>
+      <li><a href="#" onclick="switchSub('approach');return false;">Approach</a> — 5-week co-creation methodology</li>
+      <li><a href="#" onclick="switchSub('deliverables');return false;">Deliverables</a> — full output package &amp; partner training</li>
+    </ul>
+    <div class="hero-meta fade-up fade-up-3">
+      <div class="hero-meta-item"><span class="hero-meta-label">Submitted by</span><span class="hero-meta-value">Naijeria Toweett</span></div>
+      <div class="hero-meta-item"><span class="hero-meta-label">Project</span><span class="hero-meta-value">EmpowHER CHOICE · Y+ Global</span></div>
+      <div class="hero-meta-item"><span class="hero-meta-label">Timeline</span><span class="hero-meta-value">5 Jun – 5 Jul 2026</span></div>
+      <div class="hero-meta-item"><span class="hero-meta-label">Budget</span><span class="hero-meta-value">USD 3,000</span></div>
+    </div>
+  </div>
+  <div class="stat-band">
+    <div class="stat-item"><div class="stat-num">3,300</div><div class="stat-label">new HIV infections weekly<br>among young women in Sub-Saharan Africa</div></div>
+    <div class="stat-item"><div class="stat-num">63%</div><div class="stat-label">of new infections occur<br>in young women in the region</div></div>
+    <div class="stat-item"><div class="stat-num">82%</div><div class="stat-label">reduction in US HIV<br>program funding support</div></div>
+    <div class="stat-item"><div class="stat-num">121</div><div class="stat-label">AGYW validated MOSAIC's<br>PrEP positioning across 3 countries</div></div>
+  </div>
+</div>
+
+<div id="panel-challenge" class="panel coverletter-panel has-subnav">
+  <div class="challenge-bg" style="flex:1;">
+    <section>
+      <div class="section-tag">The Challenge</div>
+      <h2>Physical cards solve yesterday's<br>distribution problem.</h2>
+      <p class="lead">The RFP calls for a card game. We will deliver one — and then some. Because the research already tells us where the gaps are, and they're not in the format. They're in reach.</p>
+      <div class="challenge-grid">
+        <div class="challenge-card problem">
+          <div class="challenge-card-label">The assumption</div>
+          <h3>AGYW will gather around a facilitator's card table</h3>
+          <p>Physical card games are powerful in controlled safe-space settings — but they sit on a shelf between sessions.</p>
+          <div class="quote-pull"><p>"I haven't seen billboards. I haven't really seen posters anywhere outside of the hospital."</p><cite>— AGYW, Nairobi, Kenya · MOSAIC 2023</cite></div>
+        </div>
+        <div class="challenge-card insight">
+          <div class="challenge-card-label">The research insight</div>
+          <h3>The only PrEP information she found was on TikTok</h3>
+          <p>MOSAIC's 2023 validation with 121 AGYW across Kenya, South Africa, and Zimbabwe found that young women want PrEP information in places they go every day.</p>
+          <div class="quote-pull"><p>"Someone was talking about it in a video on TikTok. From the comments it was clear that lots of people don't know what it was."</p><cite>— AGYW, Zimbabwe · MOSAIC 2023</cite></div>
+        </div>
+      </div>
+      <div class="evi-grid">
+        <div class="evi-card"><div class="evi-num">79%</div><div class="evi-text">Mean post-test score with digital game-based learning vs. 52% traditional — RCT, Tanzania (n=120)</div></div>
+        <div class="evi-card"><div class="evi-num">p&lt;.001</div><div class="evi-text">SRH knowledge + self-efficacy gains in Tumaini Kenya pilot RCT (n=60)</div></div>
+        <div class="evi-card"><div class="evi-num">&gt;80%</div><div class="evi-text">Fun, learning, cultural relevance from AskRafikey gamification prototype — Mama Tech Limited</div></div>
+        <div class="evi-card"><div class="evi-num">121</div><div class="evi-text">AGYW validated MOSAIC PrEP positioning across Kenya, South Africa, Zimbabwe</div></div>
+      </div>
+      <div style="margin-top:40px;">
+        <div class="section-tag">MOSAIC Research · What AGYW Actually Said</div>
+        <h2>Seven findings that reshape<br>how we design this tool.</h2>
+        <p class="lead">MOSAIC's positioning validation with 121 AGYW across three countries in 2023 directly informs every card in this game.</p>
+        <div class="findings-grid">
+          <div class="finding-card"><div class="finding-num">01 / 07</div><h3>PrEP = self-care, not medicine</h3><p>"The day you decide to take PrEP is the day you show you respect yourself."</p><span class="finding-tag">Card tone guide</span></div>
+          <div class="finding-card"><div class="finding-num">02 / 07</div><h3>Safety — physical and emotional</h3><p>"I cannot control what's happening on someone else's end, but I can control what's happening on my end."</p><span class="finding-tag">Risk scenario cards</span></div>
+          <div class="finding-card"><div class="finding-num">03 / 07</div><h3>PrEP is for everyone</h3><p>"Otherwise, is this our problem only?" — diverse representation matters.</p><span class="finding-tag">Card visual design</span></div>
+          <div class="finding-card"><div class="finding-num">04 / 07</div><h3>Remove relationship framing</h3><p>Partners are context, not the driver. Framing around partners stigmatizes.</p><span class="finding-tag">Scenario framing</span></div>
+          <div class="finding-card"><div class="finding-num">05 / 07</div><h3>AGYW are already empowered</h3><p>"#IChooseMe" — "I'm the main character in my own story."</p><span class="finding-tag">Card voice + copy</span></div>
+          <div class="finding-card"><div class="finding-num">06 / 07</div><h3>Awareness is critically low</h3><p>In one SA group, less than half had heard of PrEP. No knowledge of the ring or injectable.</p><span class="finding-tag">Prevention option cards</span></div>
+          <div class="finding-card"><div class="finding-num">07 / 07</div><h3>Meet them where they are</h3><p>Social media, youth centers — not clinics. Digital life beyond the workshop.</p><span class="finding-tag">Digital-first design</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div id="panel-demo" class="panel coverletter-panel has-subnav">
+  <div class="game-section section-full" style="flex:1;">
+    <div class="game-header">
+      <div class="section-tag">Live Demo</div>
+      <h2>Play the game. Right now.</h2>
+      <p class="lead">Four card types, playable in your browser, designed to the positioning validated by MOSAIC's 121 AGYW participants.</p>
+      <div class="game-instructions">
+        <div class="instruction-step"><span class="inst-num">1</span> Tap the card to flip — see your prevention options</div>
+        <div class="instruction-step"><span class="inst-num">2</span> Tap an option to learn what it means for you</div>
+        <div class="instruction-step"><span class="inst-num">3</span> Tap <strong>Next Card</strong> for a new scenario</div>
+      </div>
+    </div>
+    <div class="card-game">
+      <div class="card-tabs" id="cardTabs">
+        <button class="card-tab active" data-type="risk" onclick="switchGameType('risk')">Risk Scenario</button>
+        <button class="card-tab" data-type="prevention" onclick="switchGameType('prevention')">Prevention Option</button>
+        <button class="card-tab" data-type="myth" onclick="switchGameType('myth')">Myth Bust</button>
+        <button class="card-tab" data-type="decision" onclick="switchGameType('decision')">Decision Prompt</button>
+      </div>
+      <div class="game-stage">
+        <div class="playing-card" id="playingCard" onclick="flipCard()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')flipCard()">
+          <div class="card-pattern"></div>
+          <div class="card-inner" id="cardInner">
+            <div class="card-face front" id="cardFront">
+              <div class="card-type-icon" id="cardTypeIcon">⚡</div>
+              <div class="card-front-header" id="cardHeader">
+                <span class="card-type-badge" id="cardBadge">Risk Scenario</span>
+                <h3 id="cardTitle">Your partner says condoms break the mood.</h3>
+              </div>
+              <div class="card-front-body">
+                <p class="card-scenario-text" id="cardScenario">You've been with your partner for 6 months. He's pushing back on using condoms. You don't know his HIV status. You want to protect yourself without making it a fight.</p>
+                <div class="card-prompt" id="cardPrompt">What HIV prevention option puts YOU in control?</div>
+              </div>
+              <div class="card-flip-hint">↺ Tap to reveal your options</div>
+            </div>
+            <div class="card-face back" id="cardBack">
+              <div class="card-back-header" id="cardBackHeader">
+                <div class="card-back-label" id="backLabel">Your move</div>
+                <div class="card-back-title" id="backTitle">You don't need his permission to protect yourself.</div>
+              </div>
+              <div class="card-back-body">
+                <p class="card-answer" id="cardAnswer">PrEP is yours. Choose the method that fits your life:</p>
+                <div class="card-options" id="cardOptions"></div>
+                <div class="card-option-result" id="optionResult"></div>
+              </div>
+              <div class="card-mosaic-credit" id="mosaicCredit">Based on MOSAIC positioning research · 121 AGYW</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-nav">
+          <button class="nav-card-btn" onclick="prevCard()">← Prev</button>
+          <div class="card-counter" id="cardCounter"></div>
+          <button class="nav-card-btn" onclick="nextCard()">Next →</button>
+        </div>
+        <div class="game-panel">
+          <div class="panel-row">
+            <div class="panel-block"><h4>Why this card type matters</h4><p id="panelWhy">Risk scenario cards translate abstract HIV statistics into moments AGYW actually live.</p></div>
+            <div class="panel-block"><div class="mosaic-insight-tag">✦ MOSAIC Finding</div><p id="panelInsight">"I cannot control what's happening on someone else's end." — AGYW, South Africa</p></div>
+          </div>
+          <div class="panel-block" style="flex:0 0 100%;"><h4>In the full game</h4><p>40–60 cards, co-created with AGYW in Kenya, Uganda, and South Africa. Print-ready + shareable digitally.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="panel-approach" class="panel coverletter-panel has-subnav">
+  <div class="challenge-bg" style="flex:1;">
+    <section>
+      <div class="section-tag">Our Approach</div>
+      <h2>Digital-first. Print-ready.<br>Always co-created.</h2>
+      <p class="lead">We don't challenge the card game format — we expand it. Every card can be shared on WhatsApp, embedded in a peer educator's phone, or played when no facilitator is present.</p>
+      <div class="method-grid">
+        <div class="method-card"><div class="method-card-header"><div class="method-num">01</div><h3>Inception &amp;<br>co-creation design</h3></div><div class="method-card-body"><p>Deep dive into consortium context. Design methodology, recruitment plan, ethical framework. Inception report within 5 days.</p><span class="method-tag">Week 1</span><span class="method-tag">Inception report</span></div></div>
+        <div class="method-card"><div class="method-card-header"><div class="method-num">02</div><h3>AGYW co-creation<br>workshops</h3></div><div class="method-card-body"><p>Participatory design sessions in at least two countries. Scenario mapping, risk profiling, myth collection, language workshops.</p><span class="method-tag">Week 2</span><span class="method-tag">Workshop package</span></div></div>
+        <div class="method-card"><div class="method-card-header"><div class="method-num">03</div><h3>Prototype build &amp;<br>digital development</h3></div><div class="method-card-body"><p>40–60 cards: digital-first (playable in browser), print-ready (PDF). Simultaneous facilitator guide development.</p><span class="method-tag">Weeks 2–3</span><span class="method-tag">Prototype deck</span></div></div>
+        <div class="method-card"><div class="method-card-header"><div class="method-num">04</div><h3>Pre-testing &amp;<br>iterative refinement</h3></div><div class="method-card-body"><p>Safe-space pre-testing with AGYW on screen and print. Refine based on feedback. Document all findings.</p><span class="method-tag">Week 3</span><span class="method-tag">User testing</span></div></div>
+        <div class="method-card"><div class="method-card-header"><div class="method-num">05</div><h3>Final package &amp;<br>partner training</h3></div><div class="method-card-body"><p>Validated card deck (print + digital), facilitator manual, integration guidance. Virtual training for consortium partners.</p><span class="method-tag">Week 4</span><span class="method-tag">Training session</span></div></div>
+        <div class="method-card"><div class="method-card-header"><div class="method-num">+</div><h3>The digital<br>advantage</h3></div><div class="method-card-body"><p>Digitally-native game can be updated as new prevention methods launch (Lenacapavir, dual prevention pill). No reprint cost.</p><span class="method-tag">Future-proof</span><span class="method-tag">Open source</span></div></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div id="panel-deliverables" class="panel coverletter-panel has-subnav">
+  <div class="deliverables-bg" style="flex:1;">
+    <section>
+      <div class="section-tag">Deliverables</div>
+      <h2>Every output the RFP requires,<br>and what makes each one better.</h2>
+      <div class="deliverable-list">
+        <div class="deliverable-item"><div class="deliverable-num">1</div><div><h3>Inception Report</h3><p>Co-creation methodology, AGYW engagement plan, facilitation tools, ethical framework, workplan.</p></div><span class="deliverable-week">Week 1</span></div>
+        <div class="deliverable-item"><div class="deliverable-num">2</div><div><h3>Co-Creation Workshop Package</h3><p>Facilitator guide, agenda, scenario mapping, risk profiling, full AGYW input documentation.</p></div><span class="deliverable-week">Week 2</span></div>
+        <div class="deliverable-item"><div class="deliverable-num">3</div><div><h3>Card Game Prototype</h3><p>40–60 cards across four types. Digital prototype + print-ready PDF. Facilitator guide draft.</p></div><span class="deliverable-week">Week 3</span></div>
+        <div class="deliverable-item"><div class="deliverable-num">4</div><div><h3>Final Package + Partner Training</h3><p>Validated deck (print + digital), finalised facilitator manual, virtual training session.</p></div><span class="deliverable-week">Week 4</span></div>
+        <div class="deliverable-item"><div class="deliverable-num">+</div><div><h3>Bonus: Open-source codebase</h3><p>Released for consortium partners to host, adapt, and build on without licensing costs.</p></div><span class="deliverable-week">Week 4</span></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- CV PANEL -->
+<div id="panel-cv" class="panel">
+  <div class="doc-bg">
+    <div class="doc-inner">
+      <div class="section-tag" style="color:var(--mt-red);">Curriculum Vitae</div>
+      <div class="doc-editor-box" style="padding:0;background:transparent;border:none;">
+          <div class="cv-display">
+            <div class="cv-header">
+              <h1>Naijeria Toweett</h1>
+              <div class="cv-title">Product Lead — Interactive Tools &amp; Digital Products for Global Health and Social Impact</div>
+              <div class="cv-contact">Kilifi, Kenya &nbsp;|&nbsp; naijeria@mamatech.co.ke &nbsp;|&nbsp; +254 721 787 043 &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/naijeriatoweett/" target="_blank">LinkedIn</a></div>
+            </div>
+
+            <div class="cv-section">
+              <h2>Profile</h2>
+              <p>Product lead with 10+ years building and shipping public-facing digital products across health, governance, and social impact in Africa. Fluent in the full product cycle — from youth co-design and user research through to technical delivery, facilitator training, and non-technical handover. Every product I deliver is designed to be owned and maintained by the team that receives it, with zero ongoing developer dependency post-launch.</p>
+            </div>
+
+            <div class="cv-section">
+              <h2>Core Credentials</h2>
+              <div class="cv-creds">
+                <div class="cv-cred">
+                  <div class="cv-cred-icon">⚙️</div>
+                  <div><strong>Digital Product Builder</strong><br>10+ years shipping mission-driven digital products — health, governance, civic tech — from co-design through deployment with zero developer dependency post-launch.</div>
+                </div>
+                <div class="cv-cred">
+                  <div class="cv-cred-icon">🏅</div>
+                  <div><strong>PMDPro Trainer of Trainers (TOT)</strong><br>Certified to train other facilitators. Designs cascade-ready training materials — facilitator manuals and train-the-trainer sessions — built for non-technical teams to own and run independently.</div>
+                </div>
+                <div class="cv-cred">
+                  <div class="cv-cred-icon">🔬</div>
+                  <div><strong>User &amp; Story Research for Digital Products</strong><br>Practised in user steering, story research, and co-design with youth and community groups. AGYW voices shape the content — not an afterthought, a methodology.</div>
+                </div>
+                <div class="cv-cred">
+                  <div class="cv-cred-icon">🎭</div>
+                  <div><strong>Community Theatre &amp; Performing Arts</strong><br>Practitioner in community theatre and performing arts. Experienced in writing scenarios that land in a room, safe-space group facilitation, and reading when a community needs a different approach.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <h2>Technical Skills</h2>
+              <div class="cv-skills-grid">
+                <div><strong>Frontend</strong><br>React · Tailwind CSS · HTML/CSS · JavaScript · Ruby on Rails</div>
+                <div><strong>Data viz</strong><br>Recharts · Chart.js · Power BI · Leaflet.js · React Simple Maps</div>
+                <div><strong>Backend</strong><br>Google Sheets API · Supabase · PostgreSQL · MySQL · Node.js · Express</div>
+                <div><strong>Tools</strong><br>Airtable · Notion · Figma · GitHub Pages · Vercel · OpenAI API</div>
+                <div><strong>Accessibility</strong><br>WCAG 2.1 · Mobile-first design · Screen reader compatible UI</div>
+                <div><strong>Product</strong><br>Co-design · User research · Story research · Technical documentation · Agile · Handover design</div>
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <h2>Experience</h2>
+
+              <div class="cv-role">
+                <div class="cv-role-header">
+                  <span class="cv-role-org">Tich Labs / Mama Tech Limited</span>
+                  <span>Product Manager &amp; Engineer (Consulting)</span>
+                  <span class="cv-role-date">Nairobi / Kilifi &nbsp;|&nbsp; 2020 – Present</span>
+                </div>
+                <p class="cv-role-summary">Building and shipping mission-driven digital products across health, governance, and civic sectors — from co-design through deployment, with consistent focus on zero-cost infrastructure, non-technical handover, and long-term sustainability.</p>
+                <ul class="cv-projects">
+                  <li><strong>Transform Health · Women in Digital Health Directory</strong> <em>March 2026</em><br>Public-facing directory of women leaders in digital health — built for Transform Health Coalition at zero ongoing infrastructure cost. Interactive discovery, storytelling, and filtering built in React. Delivered full proposal, live demo, and technical architecture in 3.5 weeks at $3,500 total investment. Demonstrates the exact sustainability model — non-technical ownership, zero developer dependency — that consortium deliverables require.</li>
+                  <li><strong>AskRafikey — Youth SRHR Health Companion</strong> <em>Feb – Oct 2025</em><br>Kenya's first AI-powered SRHR chatbot. Managed 7-person team, KES 3.2M budget, 9 partner organisations (LVCT Health, NairoBits, AYARHEP, PSK, TIKO), and 5 rounds of youth co-design — delivered after 2 years of stalled progress by previous teams. Built full gamification layer — daily quiz, points/badges, roleplay scenarios, streaks, unlockable tips — validated with youth: &gt;80% fun, learning, and cultural relevance; &gt;70% return intent. Non-technical admin CMS enabling the coalition to update verified content with zero developer dependency post-launch. GPS-based service finder, full admin dashboard with analytics.</li>
+                  <li><strong>NairobiTalks — GovTech Civic Platform</strong> <em>December 2025</em><br>Designed and shipped a filterable civic dashboard in a 1.5-day co-design sprint with the World Bank and Nairobi County Government. Multi-stakeholder process: citizens, government, civil society, and engineers — functional product by end of sprint.</li>
+                  <li><strong>DADA Menopause Companion</strong> <em>Sept 2025 – Present</em><br>Product architect for African women's menopause companion app — AI-powered, culturally responsive, mobile-first. Same design principles as SRHR tools applied to a stigmatised, underserved health topic.</li>
+                  <li><strong>NAILAB Mentorship Platform</strong> <em>Dec 2025 – Mar 2026</em><br>Delivered MVP connecting African startups to mentors — unblocked delivery delays, guided iterative improvements, shipped on schedule.</li>
+                </ul>
+              </div>
+
+              <div class="cv-role">
+                <div class="cv-role-header">
+                  <span class="cv-role-org">Girl Effect</span>
+                  <span>Global Technical Manager</span>
+                  <span class="cv-role-date">Nairobi (remote) &nbsp;|&nbsp; Jul 2023 – Jun 2025</span>
+                </div>
+                <p>Led cross-country collaboration to translate Data Platform requirements into roadmaps, user stories, and delivery plans across Kenya, Tanzania, Ethiopia, and South Africa.</p>
+              </div>
+
+              <div class="cv-role">
+                <div class="cv-role-header">
+                  <span class="cv-role-org">Girl Effect</span>
+                  <span>Global TEGA Tech Product Manager</span>
+                  <span class="cv-role-date">Nairobi &nbsp;|&nbsp; Oct 2021 – Jun 2023</span>
+                </div>
+                <ul>
+                  <li>Developed and maintained TEGA Tech's 3-year product roadmap. Led redesign of Moodle-based e-learning platform — feature prioritisation, release planning, cross-country rollouts.</li>
+                  <li>Led user testing cycles and refined product strategy based on post-launch performance. Trained non-technical country teams for operational sustainability across four countries.</li>
+                </ul>
+              </div>
+
+              <div class="cv-role">
+                <div class="cv-role-header">
+                  <span class="cv-role-org">Love Matters Africa / RNW Media</span>
+                  <span>Regional Coordinator</span>
+                  <span class="cv-role-date">Kenya / Nigeria &nbsp;|&nbsp; Jan 2017 – Oct 2019</span>
+                </div>
+                <p>Managed a regional team of nine across Kenya and Nigeria, overseeing budgets and donor reporting. Led digital engagement strategies, campaigns, and offline activation initiatives across markets.</p>
+              </div>
+
+              <div class="cv-role">
+                <div class="cv-role-header">
+                  <span class="cv-role-org">Love Matters Africa / RNW Media</span>
+                  <span>Social Media Manager</span>
+                  <span class="cv-role-date">Kenya &nbsp;|&nbsp; Sept 2013 – Dec 2016</span>
+                </div>
+                <p>Six years creating culturally relevant SRHR content for millions of young people across Kenya and Nigeria. Grew Facebook community from 50K to 1.1M; Instagram to 15K in 6 months. Deep experience in consent, reproductive health, relationships, and HIV prevention content — crafted specifically for adolescent girls and young women in East and West Africa.</p>
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <h2>Additional Roles</h2>
+              <p><strong>Equilo</strong> — Full Stack Engineer <em>(Dec 2020 – Mar 2021)</em> &nbsp;·&nbsp; <strong>Triggerise</strong> — Frontend Engineer <em>(Apr – Sept 2021)</em> &nbsp;·&nbsp; <strong>GitHub DPG HURIDOCS UWAZI</strong> — Open Source Community Manager <em>(Jul – Dec 2023)</em></p>
+            </div>
+
+            <div class="cv-section">
+              <h2>Training &amp; Certifications</h2>
+              <ul>
+                <li><strong>PMDPro</strong> — Trainer of Trainers (TOT) · Cascade facilitation design</li>
+                <li><strong>GovStack Women in GovTech Challenge (WIGTC 2026)</strong> — Development Stream Mentee: scalable, inclusive GovTech solutions</li>
+                <li><strong>CodeOp Barcelona</strong> — Advanced Certificate, Product Management (2022): Product/Market Fit, Design Thinking, Lean Startup, Agile</li>
+                <li><strong>CodeOp Barcelona</strong> — Advanced Certificate, Full Stack Development (2020): JavaScript, React.js, Node.js, Express, MySQL</li>
+              </ul>
+            </div>
+
+            <div class="cv-section">
+              <h2>Publications &amp; Writing</h2>
+              <p><strong>My Take</strong> (<a href="https://www.linkedin.com/newsletters/my-take-7342078807366930434/" target="_blank">LinkedIn Newsletter</a>) — Practical insights on tech and product design for PMs, founders, and builders.</p>
+              <p style="margin-top:16px;color:#888;font-style:italic;">References available on request.</p>
+            </div>
+          </div>
+        <div class="doc-meta" style="margin-top:0;padding:16px 0 0;">
+          <button class="doc-dl-btn" onclick="printDoc('cv')">↓ Download CV as PDF</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WORK SAMPLES PANEL -->
+<div id="panel-samples" class="panel">
+  <div class="doc-bg">
+    <div class="doc-inner">
+      <div class="section-tag" style="color:var(--mt-red);">Samples of Previous Work</div>
+      <div class="doc-editor-box" style="padding:0;background:transparent;border:none;">
+        <div class="samples-display">
+          <div class="samples-tabs">
+            <button class="samples-tab active" data-sample="0">AskRafikey</button>
+            <button class="samples-tab" data-sample="1">Transform Health Directory</button>
+          </div>
+          <div class="samples-panels">
+            <div class="samples-panel active" data-sample="0">
+              <h3>AskRafikey — AI SRHR Chatbot with Gamification</h3>
+              <p class="desc">Daily quiz challenges, points &amp; badges, roleplay scenarios, streaks. Youth co-created. &gt;80% fun + learning + cultural relevance ratings.</p>
+              <a href="https://chat.askrafikey.com/lets-play/welcome/plain/quiz" target="_blank" class="game-btn">Play the Game →</a>
+              <div class="sample-embed">
+                <div class="embed-label">Play the Game — Embedded</div>
+                <iframe src="https://chat.askrafikey.com/lets-play/welcome/plain/quiz" class="embed-iframe" loading="lazy" title="AskRafikey quiz game"></iframe>
+                <a href="https://chat.askrafikey.com/lets-play/welcome/plain/quiz" target="_blank" class="embed-open">Open in full tab →</a>
+              </div>
+              <div class="sample-embed">
+                <div class="embed-label">Portfolio / Case Study</div>
+                <iframe src="https://rafikey-portfolio.lovable.app/" class="embed-iframe" loading="lazy" title="AskRafikey case study portfolio"></iframe>
+                <a href="https://rafikey-portfolio.lovable.app/" target="_blank" class="embed-open">Open full case study →</a>
+              </div>
+              <div class="sample-embed">
+                <div class="embed-label">AskRafikey Website</div>
+                <iframe src="https://askrafikey.com/" class="embed-iframe" loading="lazy" title="AskRafikey homepage"></iframe>
+                <a href="https://askrafikey.com/" target="_blank" class="embed-open">Open askrafikey.com →</a>
+              </div>
+            </div>
+            <div class="samples-panel" data-sample="1">
+              <h3>Transform Health Directory — People Database</h3>
+              <p class="desc">A searchable, filterable public directory of Transform Health coalition members across Africa, Asia, and Latin America. Built with a non-technical admin CMS so coalition staff can manage entries without developer support.</p>
+              <div class="sample-embed">
+                <div class="embed-label">Transform Health Directory</div>
+                <iframe src="https://tich-labs.github.io/transform-health-directory/" class="embed-iframe" loading="lazy" title="Transform Health directory"></iframe>
+                <a href="https://tich-labs.github.io/transform-health-directory/" target="_blank" class="embed-open">Open full site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<script>
+const CARDS = {
+  risk: [
+    { title: "Your partner says condoms break the mood.", icon: "⚡", scenario: "You've been with your partner for 6 months. He's pushing back on using condoms. You don't know his HIV status. You want to protect yourself without making it a fight.", prompt: "What HIV prevention option puts YOU in control?", backTitle: "You don't need his permission to protect yourself.", answer: "PrEP is yours. Choose the method that fits your life:", options: [{ text: "Daily oral PrEP pill", result: "✓ One pill a day, highly effective, available at most clinics." }, { text: "CAB-LA injectable (every 2 months)", result: "✓ No daily pill to remember or hide. An injection every 2 months." }, { text: "Vaginal ring (monthly)", result: "✓ A monthly ring you insert yourself. Discreet, under your control." }], mosaicNote: "MOSAIC · 121 AGYW · Kenya, South Africa, Zimbabwe" },
+    { title: "You're between jobs. Clinic visits feel impossible.", icon: "🏥", scenario: "You know you should be on PrEP. But the clinic is far, you can't always take time off, and you've missed refill dates.", prompt: "Which PrEP option works with your life?", backTitle: "PrEP was designed to fit your life.", answer: "Newer prevention methods require fewer clinic visits:", options: [{ text: "Lenacapavir (twice a year)", result: "✓ Two clinic visits a year. Currently in rollout." }, { text: "CAB-LA injectable (every 2 months)", result: "✓ Six visits a year. Combine with other health checks." }, { text: "Daily oral PrEP", result: "✓ Ask about multi-month dispensing — 3 months at once." }], mosaicNote: "MOSAIC · 121 AGYW · 2023" }
+  ],
+  prevention: [
+    { title: "Lenacapavir", icon: "💉", scenario: "A breakthrough injectable providing HIV prevention for six months. Near-100% effectiveness in trials.", prompt: "What does this mean for you?", backTitle: "Two visits a year. That's it.", answer: "Lenacapavir could transform access for women who struggle with daily pills:", options: [{ text: "Who is it for?", result: "Any AGYW at risk who wants the fewest possible clinic visits." }, { text: "Is it safe?", result: "Yes — PURPOSE 1 trial showed ~100% effectiveness in AGYW." }, { text: "What if I miss a dose?", result: "The dosing window has flexibility built in." }], mosaicNote: "PURPOSE 1 trial · MOSAIC PrEP brief 2023" },
+    { title: "Dapivirine Vaginal Ring", icon: "💍", scenario: "A monthly ring you insert yourself. No pills. No injections. No partner negotiation.", prompt: "Could this be right for you?", backTitle: "Your body. Your method. Your choice.", answer: "The ring offers complete invisibility and autonomy:", options: [{ text: "Does it protect against STIs?", result: "HIV only. Combine with condoms for broader protection." }, { text: "Will my partner feel it?", result: "Some can; many cannot. Remove for sex (up to 2 hours)." }, { text: "What if I forget?", result: "Set a private monthly reminder. A day or two late is OK." }], mosaicNote: "MOSAIC PrEP category brief" }
+  ],
+  myth: [
+    { title: '"PrEP is only for sex workers."', icon: "❌", scenario: "You've heard this from family, community, even at the clinic. One of the biggest barriers to AGYW accessing PrEP.", prompt: "What's the truth?", backTitle: "PrEP is for anyone who wants to protect themselves.", answer: "This myth hurts. Here's the truth:", options: [{ text: "Who is PrEP actually for?", result: "Any person who wants to reduce HIV risk — regardless of partners or identity." }, { text: "Why does this myth exist?", result: "Early campaigns focused on 'high risk groups.' That frames stigma." }, { text: "What can I say if judged?", result: "'I take PrEP because I respect myself.' That's enough." }], mosaicNote: "MOSAIC Finding #3 · 2023" },
+    { title: '"PrEP side effects never go away."', icon: "💊", scenario: "In one SA group, a mother living with HIV told young women not to take PrEP — she confused it with ARV side effects.", prompt: "What does the evidence say?", backTitle: "Side effects are real. They are also temporary.", answer: "Being honest builds more trust:", options: [{ text: "What side effects?", result: "Nausea, headache, fatigue in first few weeks. Resolves for most." }, { text: "Do all methods have them?", result: "Different methods, different profiles. Ask your provider." }, { text: "What if they persist?", result: "There are multiple PrEP options. If one doesn't work, another might." }], mosaicNote: "MOSAIC Finding #6 · South Africa · 2023" }
+  ],
+  decision: [
+    { title: "Daily pills are impossible with your work schedule.", icon: "⏰", scenario: "You started PrEP 3 months ago. But your job has irregular hours. You're worried your protection is slipping.", prompt: "What's your move?", backTitle: "Switching methods is not giving up.", answer: "Adherence is not a character test:", options: [{ text: "Switch to CAB-LA injectable", result: "✓ Once injected, it works for 2 months." }, { text: "Try the vaginal ring", result: "✓ Insert once a month, no daily management." }, { text: "Use reminders + stick with pills", result: "✓ Private alarm, pill boxes. Valid if it works." }], mosaicNote: "MOSAIC Positioning · 2023" },
+    { title: "You're pregnant. You want to stay protected.", icon: "🤰", scenario: "You just found out you're pregnant. Partner's status is unknown. You want to protect yourself and your baby.", prompt: "Which PrEP options are safe?", backTitle: "Protecting yourself protects your baby too.", answer: "You have safe options:", options: [{ text: "Oral PrEP during pregnancy?", result: "✓ Yes. WHO recommends oral PrEP for pregnant/breastfeeding women." }, { text: "Injectable or ring?", result: "Data limited. Oral PrEP is safest recommendation for now." }, { text: "Scared to tell my provider?", result: "Say: 'I want to continue HIV prevention.' That's enough." }], mosaicNote: "WHO PrEP guidelines · MOSAIC 2023" }
+  ]
+};
+
+let gameType = 'risk', gameIndex = 0, isFlipped = false;
+
+function getCards() { return CARDS[gameType]; }
+
+function renderCard() {
+  isFlipped = false;
+  document.getElementById('playingCard').classList.remove('flipped');
+  const card = getCards()[gameIndex];
+  document.getElementById('cardBadge').textContent = { risk: 'Risk Scenario', prevention: 'Prevention Option', myth: 'Myth Bust', decision: 'Decision Prompt' }[gameType];
+  document.getElementById('cardTypeIcon').textContent = card.icon;
+  document.getElementById('cardTitle').textContent = card.title;
+  document.getElementById('cardScenario').textContent = card.scenario;
+  document.getElementById('cardPrompt').textContent = card.prompt;
+  document.getElementById('backLabel').textContent = 'Your move';
+  document.getElementById('backTitle').textContent = card.backTitle;
+  document.getElementById('cardAnswer').textContent = card.answer;
+  document.getElementById('mosaicCredit').textContent = card.mosaicNote;
+  document.getElementById('optionResult').className = 'card-option-result';
+  document.getElementById('optionResult').textContent = '';
+  const o = document.getElementById('cardOptions');
+  o.innerHTML = '';
+  card.options.forEach((opt, i) => {
+    const b = document.createElement('button');
+    b.className = 'card-option'; b.textContent = opt.text;
+    b.onclick = (e) => { e.stopPropagation(); chooseOption(i); };
+    o.appendChild(b);
+  });
+  document.getElementById('cardFront').className = 'card-face front card-' + gameType;
+  document.getElementById('cardBack').className = 'card-face back card-' + gameType;
+  document.getElementById('cardBackHeader').style.background = 'rgba(0,0,0,0.2)';
+  const c = document.getElementById('cardCounter');
+  c.innerHTML = '';
+  getCards().forEach((_, i) => { const d = document.createElement('div'); d.className = 'counter-dot' + (i === gameIndex ? ' active' : ''); c.appendChild(d); });
+  document.getElementById('panelWhy').textContent = { risk: 'Risk scenarios translate statistics into moments AGYW actually live.', prevention: 'Prevention cards give the full picture. Several groups had zero knowledge of the ring/injectable.', myth: 'Myth-bust cards tackle misinformation MOSAIC documented across communities.', decision: 'Decision cards build the skill of translating circumstances into a prevention choice.' }[gameType];
+  document.getElementById('panelInsight').textContent = { risk: '"I cannot control what\'s happening on someone else\'s end." — AGYW, South Africa', prevention: '"I haven\'t seen posters anywhere outside of the hospital." — AGYW, Nairobi', myth: '"People are given the wrong information." — AGYW, South Africa', decision: '"I\'m the main character in my own story." — AGYW, Kenya' }[gameType];
+}
+function flipCard() { isFlipped = !isFlipped; document.getElementById('playingCard').classList.toggle('flipped', isFlipped); }
+function chooseOption(i) {
+  document.querySelectorAll('.card-option').forEach((b, j) => b.classList.toggle('chosen', j === i));
+  const r = document.getElementById('optionResult');
+  r.textContent = getCards()[gameIndex].options[i].result;
+  r.className = 'card-option-result show';
+}
+function switchGameType(t) { gameType = t; gameIndex = 0; document.querySelectorAll('.card-tab').forEach(tab => tab.classList.toggle('active', tab.dataset.type === t)); renderCard(); }
+function nextCard() { gameIndex = (gameIndex + 1) % getCards().length; renderCard(); }
+function prevCard() { gameIndex = (gameIndex - 1 + getCards().length) % getCards().length; renderCard(); }
+
+function switchMain(id) {
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.toggle('active', a.dataset.main === id));
+  const isProposal = id === 'proposal';
+  document.querySelector('.nav-pdf-btn').classList.toggle('hidden', isProposal);
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  if (isProposal) {
+    document.getElementById('panel-overview').classList.add('active');
+  } else {
+    document.getElementById('panel-' + id).classList.add('active');
+  }
+  const labels = { cv: '↓ Download CV as PDF', samples: '↓ Download Work Samples as PDF' };
+  if (!isProposal) document.querySelector('.nav-pdf-btn').textContent = labels[id];
+}
+
+function switchSub(id) {
+  const currentIdx = stepOrder.indexOf(id);
+  document.querySelectorAll('.subnav a').forEach(a => {
+    a.classList.toggle('active', a.dataset.sub === id);
+    a.classList.toggle('visited', stepOrder.indexOf(a.dataset.sub) <= currentIdx);
+  });
+  document.querySelectorAll('.coverletter-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('active');
+}
+
+const stepOrder = ['overview', 'challenge', 'demo', 'approach', 'deliverables'];
+
+function printDoc(type) {
+  if (type === 'proposal') return;
+  if (type === 'coverletter') {
+    const html = coverLetterHTML();
+    const w = window.open('', '_blank');
+    w.document.write(html);
+    w.document.close();
+    w.focus();
+    setTimeout(() => { w.print(); }, 500);
+    return;
+  }
+  const titles = { cv: 'Curriculum Vitae', samples: 'Samples of Previous Work' };
+  const colors = { cv: '#CC0000', samples: '#0E7A6B' };
+  const selectors = { cv: '#panel-cv .cv-display', samples: '#panel-samples .samples-display' };
+  const el = document.querySelector(selectors[type]);
+  if (!el) return;
+  const content = el.innerHTML;
+  const html = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${titles[type]} · EmpowHER CHOICE</title><style>@page{margin:2cm}*{box-sizing:border-box;margin:0;padding:0}body{font-family:Georgia,'Times New Roman',serif;font-size:12pt;line-height:1.6;color:#222;max-width:210mm;margin:0 auto;padding:2cm}h1{font-size:22pt;font-weight:700;margin-bottom:4px;color:#111;border-bottom:3px solid ${colors[type]};padding-bottom:8px}.subtitle{font-size:10pt;color:#666;margin-bottom:24px}.content{font-size:11pt;line-height:1.7}.content a{color:${colors[type]}}.content h2{font-size:14pt;font-weight:700;margin-top:20px;margin-bottom:6px;color:#333;border-bottom:1px solid #ddd;padding-bottom:4px}.content h3{font-size:13pt;font-weight:600;margin-top:14px;margin-bottom:4px;color:#444}.content ul{margin:6px 0 12px 18px}.content li{margin-bottom:4px}.content p{margin-bottom:6px}.footer{margin-top:40px;padding-top:16px;border-top:1px solid #DDD;font-size:9pt;color:#999;text-align:center}@media print{body{padding:0}}</style></head><body><h1>${titles[type]}</h1><div class="subtitle">EmpowHER CHOICE · HIV Prevention Card Game Consultancy · Y+ Global / Aidsfonds</div><div class="content">${content}</div><div class="footer">Submitted to ijebet@yplusglobal.org · Deadline: 30 May 2026</div></body></html>`;
+  const w = window.open('', '_blank');
+  w.document.write(html);
+  w.document.close();
+  w.focus();
+  setTimeout(() => { w.print(); }, 500);
+}
+
+function coverLetterHTML() {
+  return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Proposal · EmpowHER CHOICE Consultancy</title><style>
+    @page{margin:2cm}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Georgia,'Times New Roman',serif;font-size:11pt;line-height:1.7;color:#222;max-width:210mm;margin:0 auto;padding:2cm}
+    h1{font-size:20pt;font-weight:700;margin-bottom:2px;color:#111}
+    h2{font-size:14pt;font-weight:700;margin-top:24px;margin-bottom:8px;color:#333;border-bottom:1px solid #DDD;padding-bottom:4px}
+    h3{font-size:12pt;font-weight:700;margin-top:16px;margin-bottom:4px;color:#444}
+    .meta{font-size:10pt;color:#666;margin-bottom:20px;border-bottom:2px solid #CC0000;padding-bottom:10px}
+    p{margin-bottom:8px}
+    ul{margin:6px 0 12px 20px}
+    li{margin-bottom:4px}
+    .sig{margin-top:28px;padding-top:16px;border-top:1px solid #DDD}
+    .section{margin-bottom:4px}
+    @media print{body{padding:0}}
+  </style></head><body>
+    <h1>Proposal</h1>
+    <div class="meta">EmpowHER CHOICE · Interactive HIV Prevention Card Game Consultancy · Y+ Global / Aidsfonds</div>
+    <p>Dear EmpowHER Fund Team,</p>
+    <p>I am writing to submit my proposal for the <strong>Consultant to Develop an Interactive HIV Prevention Card Game</strong> under the EmpowHER Fund. This proposal outlines my qualifications and approach for this assignment.</p>
+
+    <h2>Understanding of the Challenge</h2>
+    <p>The HIV prevention landscape has evolved significantly — daily oral PrEP, the Dapivirine vaginal ring, CAB-LA injectable, and emerging innovations like Lenacapavir offer transformative potential. However, adolescent girls and young women (AGYW) in Sub-Saharan Africa still face major barriers: stigma, limited awareness, restrictive gender norms, and funding cuts. MOSAIC research with 121 AGYW across Kenya, South Africa, and Zimbabwe confirms that awareness remains critically low — in one South Africa group, less than half had heard of PrEP.</p>
+    <p>My proposal recognises that a physical card game alone is insufficient. AGYW need information where they already are — on TikTok, WhatsApp, and in youth centres — while still benefiting from the power of facilitated safe-space sessions. The tool I propose is <strong>digital-first and print-ready</strong>: playable in a browser, shareable via link, and printable for workshop facilitation.</p>
+
+    <h2>Approach &amp; Methodology</h2>
+    <p>My approach spans five phases over the one-month consultancy period:</p>
+    <ul>
+      <li><strong>Week 1 — Inception &amp; Co-Creation Design:</strong> Deep dive into the EmpowHER CHOICE consortium context. Design participatory methodology, recruitment plan, ethical framework. Deliver inception report within 5 days.</li>
+      <li><strong>Week 2 — AGYW Co-Creation Workshops:</strong> Facilitated participatory design sessions with AGYW in at least two consortium countries. Scenario mapping, risk profiling, myth collection, and language workshops. AGYW voices shape every card.</li>
+      <li><strong>Weeks 2–3 — Prototype Build:</strong> 40–60 card prototype across four types (risk scenarios, prevention options, myth-busting, decision prompts). Digital-first with print-ready PDF output. Simultaneous facilitator guide development.</li>
+      <li><strong>Week 3 — Pre-Testing &amp; Iteration:</strong> Safe-space pre-testing with AGYW on screen and print. Evaluate usability, comprehension, cultural relevance. Refine based on participant feedback.</li>
+      <li><strong>Week 4 — Final Package &amp; Training:</strong> Validated card deck (print + digital), finalised facilitator manual, integration guidance. Virtual training session for consortium partners.</li>
+    </ul>
+
+    <h2>Deliverables</h2>
+    <ul>
+      <li><strong>Deliverable 1:</strong> Inception Report — methodology, engagement plan, ethical framework, workplan</li>
+      <li><strong>Deliverable 2:</strong> Co-Creation Workshop Package — facilitator guide, agenda, scenario mapping tools, AGYW input documentation</li>
+      <li><strong>Deliverable 3:</strong> HIV Risk-Assessment Card Game Prototype — 40–60 cards across four types, game mechanics, print-ready draft, facilitator guide</li>
+      <li><strong>Deliverable 4:</strong> Final Validated Package — fully validated deck (print + digital), finalised facilitator manual, integration guidance, virtual training session</li>
+      <li><strong>Bonus:</strong> Open-source codebase for consortium partners to host, adapt, and build upon</li>
+    </ul>
+
+    <h2>Why Me</h2>
+    <p>This proposal is not a pitch for something I hope to build — it is a description of something I have already built, tested, and delivered. At <strong>AskRafikey</strong>, I led the end-to-end development of Kenya's first AI-powered SRHR chatbot with a full gamification layer, managing a cross-organisational team of nine partners across five rounds of youth co-design. The result — an 80% engagement rating from the young women it was built for — is not a target I am promising to meet. It is a baseline I have already exceeded. The <strong>Transform Health Women in Digital Health Directory</strong> and the <strong>NairobiTalks civic dashboard</strong>, delivered in a 1.5-day sprint with the World Bank, demonstrate the same working method: co-design with the people who will use the tool, ship fast, hand over a product that does not need a developer to keep running. I am a <strong>PMDPro Trainer of Trainers</strong> because I design for the cascade — the facilitator who trains the next facilitator, the coalition that maintains the tool after the consultant leaves. Every deliverable in this proposal is structured around that principle. That is the experience I am applying, not the one I am asking for.</p>
+
+    <div class="sig">
+      <p>Sincerely,<br><strong>Naijeria Toweett</strong><br>Kilifi, Kenya<br>naijeria@mamatech.co.ke</p>
+    </div>
+    <div class="footer" style="margin-top:30px;padding-top:12px;border-top:1px solid #DDD;font-size:9pt;color:#999;text-align:center;">Submitted to ijebet@yplusglobal.org · Deadline: 30 May 2026</div>
+  </body></html>`;
+}
+
+renderCard();
+switchSub('overview');
+</script>
+</body>
+</html>
