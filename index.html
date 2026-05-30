@@ -451,7 +451,7 @@ function renderCard() {
     o.appendChild(b);
   });
   document.getElementById('cardFrontImg').src = gameType.charAt(0).toUpperCase() + gameType.slice(1) + '.png';
-  document.getElementById('cardBack').className = 'card-face back card-' + gameType;
+  document.getElementById('cardBack').className = 'card-face back';
   document.getElementById('cardBackHeader').style.background = 'rgba(0,0,0,0.2)';
   const c = document.getElementById('cardCounter');
   c.innerHTML = '';
