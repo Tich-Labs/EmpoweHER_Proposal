@@ -217,33 +217,36 @@
   .game-stage { display: flex; flex-direction: column; align-items: center; gap: 16px; }
   .playing-card { width: 100%; max-width: 520px; min-height: 420px; border-radius: 16px; position: relative; cursor: pointer; perspective: 1000px; flex-shrink: 0; }
   .playing-card::after { content: ''; position: absolute; inset: 0; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); pointer-events: none; z-index: 1; }
-  .card-inner { width: 100%; height: 100%; min-height: 420px; transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; position: relative; border-radius: 16px; z-index: 2; }
+  .card-inner { display: grid; grid-template-columns: 1fr; min-height: 420px; transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; border-radius: 16px; z-index: 2; }
   .playing-card.flipped .card-inner { transform: rotateY(180deg); }
-  .card-face { position: absolute; top: 0; left: 0; width: 100%; min-height: 420px; backface-visibility: hidden; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; background: white; }
-  .card-face.back { transform: rotateY(180deg); background: linear-gradient(145deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%); }
-  .card-bg-img { width: 100%; height: 200px; object-fit: cover; display: block; flex-shrink: 0; }
+  .card-face { grid-area: 1 / 1; width: 100%; min-height: 420px; backface-visibility: hidden; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+  .card-face.back { transform: rotateY(180deg); justify-content: space-between; }
+  .card-risk { background: linear-gradient(145deg, #B07010 0%, #C8961E 40%, #A07818 100%); }
+  .card-prevention { background: linear-gradient(145deg, #074F44 0%, #0E7A6B 40%, #095E52 100%); }
+  .card-myth { background: linear-gradient(145deg, #6B2A6B 0%, #8B3A8B 40%, #7A3280 100%); }
+  .card-decision { background: linear-gradient(145deg, #0F4580 0%, #1A5FA8 40%, #154E95 100%); }
+  .card-bg-img { width: 100%; display: block; flex-shrink: 0; }
   .card-face.front > *:not(.card-bg-img) { position: relative; }
+  .card-type-badge { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; border-radius: 4px; display: inline-block; margin-bottom: 10px; background: rgba(255,255,255,0.2); color: white; }
   .card-front-header { padding: 14px 18px 14px; position: relative; }
-  .card-front-header h3 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--mt-black); line-height: 1.25; }
+  .card-front-header h3 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: white; line-height: 1.25; }
   .card-front-body { flex: 1; padding: 18px; }
-  .card-scenario-text { font-size: 13px; color: #333; line-height: 1.6; margin-bottom: 16px; }
-  .card-prompt { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; color: var(--mt-black); background: var(--mt-light); padding: 10px 14px; border-radius: 8px; border: 1px solid #DDD; }
-  .card-flip-hint { padding: 10px 18px; background: var(--mt-light); display: flex; align-items: center; justify-content: center; gap: 8px; font-family: 'DM Mono', monospace; font-size: 12px; color: #888; letter-spacing: 0.08em; }
-  .card-back-header { padding: 14px 18px 10px; }
-  .card-back-label { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
-  .card-back-title { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; color: white; line-height: 1.2; }
-  .card-back-body { flex: 1; padding: 14px 18px; }
-  .card-answer { font-size: 12px; color: rgba(255,255,255,0.9); line-height: 1.6; margin-bottom: 12px; }
-  .card-options { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
-  .card-option { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 8px 12px; cursor: pointer; transition: all 0.15s; font-size: 12px; color: rgba(255,255,255,0.9); text-align: left; }
+  .card-scenario-text { font-size: 13px; color: rgba(255,255,255,0.9); line-height: 1.6; margin-bottom: 16px; }
+  .card-prompt { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; color: white; background: rgba(255,255,255,0.15); padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); }
+  .card-flip-hint { padding: 10px 18px; background: rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; gap: 8px; font-family: 'DM Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.08em; }
+  .card-back-header { padding: 18px 20px 14px; }
+  .card-back-label { font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 6px; }
+  .card-back-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: white; line-height: 1.25; }
+  .card-back-body { padding: 16px 20px; }
+  .card-answer { font-size: 14px; color: rgba(255,255,255,0.9); line-height: 1.65; margin-bottom: 14px; }
+  .card-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+  .card-option { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 12px 16px; cursor: pointer; transition: all 0.15s; font-size: 14px; color: rgba(255,255,255,0.9); text-align: left; }
   .card-option:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.4); }
   .card-option.chosen { background: rgba(255,255,255,0.25); border-color: white; }
-  .card-option-result { margin-top: 8px; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 10px 12px; font-size: 12px; color: rgba(255,255,255,0.85); line-height: 1.6; display: none; }
+  .card-option-result { margin-top: 10px; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 12px 14px; font-size: 13px; color: rgba(255,255,255,0.85); line-height: 1.6; display: none; }
   .card-option-result.show { display: block; }
-  .card-mosaic-credit { padding: 8px 18px 10px; font-family: 'DM Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.35); letter-spacing: 0.06em; text-align: center; }
-  .card-back {
-    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
-  }
+  .card-mosaic-credit { padding: 10px 20px 12px; font-family: 'DM Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.35); letter-spacing: 0.06em; text-align: center; }
+
   .card-nav { display: flex; align-items: center; gap: 16px; }
   .nav-card-btn { background: var(--mt-black); color: white; border: none; border-radius: 8px; padding: 10px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
   .nav-card-btn:hover { background: var(--mt-red); }

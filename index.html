@@ -432,7 +432,8 @@ function renderCard() {
   document.getElementById('playingCard').classList.remove('flipped');
   const card = getCards()[gameIndex];
   document.getElementById('cardBadge').textContent = { risk: 'Risk Scenario', prevention: 'Prevention Option', myth: 'Myth Bust', decision: 'Decision Prompt' }[gameType];
-  document.getElementById('cardTypeImg').src = gameType.charAt(0).toUpperCase() + gameType.slice(1) + '.png';
+  document.getElementById('cardFront').className = 'card-face front card-' + gameType;
+  document.getElementById('cardBack').className = 'card-face back card-' + gameType;
   document.getElementById('cardTitle').textContent = card.title;
   document.getElementById('cardScenario').textContent = card.scenario;
   document.getElementById('cardPrompt').textContent = card.prompt;
@@ -451,7 +452,6 @@ function renderCard() {
     o.appendChild(b);
   });
   document.getElementById('cardFrontImg').src = gameType.charAt(0).toUpperCase() + gameType.slice(1) + '.png';
-  document.getElementById('cardBack').className = 'card-face back';
   document.getElementById('cardBackHeader').style.background = 'rgba(0,0,0,0.2)';
   const c = document.getElementById('cardCounter');
   c.innerHTML = '';
