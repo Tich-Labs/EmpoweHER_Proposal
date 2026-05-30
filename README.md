@@ -1,5 +1,7 @@
 # EmpowHER CHOICE — HIV Prevention Card Game Consultancy Proposal
 
+![EmpowHER CHOICE Proposal Overview](Overview.png)
+
 **Response to:** Consultant to Develop an Interactive HIV Prevention Card Game under the EmpowHER Fund
 
 **Applicant:** Naijeria Toweett · MamaTech Africa  
