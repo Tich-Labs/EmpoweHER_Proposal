@@ -217,14 +217,14 @@
   .game-stage { display: flex; flex-direction: column; align-items: center; gap: 16px; }
   .playing-card { width: 100%; max-width: 520px; min-height: 420px; border-radius: 16px; position: relative; cursor: pointer; perspective: 1000px; flex-shrink: 0; }
   .playing-card::after { content: ''; position: absolute; inset: 0; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); pointer-events: none; z-index: 1; }
-  .card-pattern { position: absolute; inset: 0; border-radius: 16px; opacity: 0.08; background-image: radial-gradient(circle at 25% 25%, white 1px, transparent 1px), radial-gradient(circle at 75% 75%, white 1px, transparent 1px); background-size: 32px 32px; pointer-events: none; z-index: 0; }
   .card-inner { width: 100%; height: 100%; min-height: 420px; transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; position: relative; border-radius: 16px; z-index: 2; }
   .playing-card.flipped .card-inner { transform: rotateY(180deg); }
   .card-face { position: absolute; top: 0; left: 0; width: 100%; min-height: 420px; backface-visibility: hidden; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+  .card-face.front { background-size: cover; background-position: center; background-repeat: no-repeat; }
   .card-face.back { transform: rotateY(180deg); }
-  .card-type-icon { width: 100%; height: 180px; overflow: hidden; flex-shrink: 0; }
-  .card-type-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .card-front-header { padding: 14px 18px 14px; position: relative; }
+  .card-face.front::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.25); z-index: 1; border-radius: 16px; }
+  .card-face.front > * { position: relative; z-index: 2; }
+  .card-front-header { padding: 14px 18px 14px; position: relative; background: rgba(0,0,0,0.35); backdrop-filter: blur(2px); z-index: 2; }
   .card-type-badge { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; background: rgba(255,255,255,0.2); color: white; }
   .card-front-header h3 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: white; line-height: 1.25; }
   .card-front-body { flex: 1; background: rgba(0,0,0,0.15); padding: 18px; }
@@ -243,10 +243,6 @@
   .card-option-result { margin-top: 8px; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 10px 12px; font-size: 12px; color: rgba(255,255,255,0.85); line-height: 1.6; display: none; }
   .card-option-result.show { display: block; }
   .card-mosaic-credit { padding: 8px 18px 10px; font-family: 'DM Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.35); letter-spacing: 0.06em; text-align: center; background: rgba(0,0,0,0.15); }
-  .card-risk { background: linear-gradient(145deg, #B07010 0%, #C8961E 40%, #A07818 100%); }
-  .card-prevention { background: linear-gradient(145deg, #074F44 0%, #0E7A6B 40%, #095E52 100%); }
-  .card-myth { background: linear-gradient(145deg, #6B2A6B 0%, #8B3A8B 40%, #7A3280 100%); }
-  .card-decision { background: linear-gradient(145deg, #0F4580 0%, #1A5FA8 40%, #154E95 100%); }
   .card-nav { display: flex; align-items: center; gap: 16px; }
   .nav-card-btn { background: var(--mt-black); color: white; border: none; border-radius: 8px; padding: 10px 20px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
   .nav-card-btn:hover { background: var(--mt-red); }
