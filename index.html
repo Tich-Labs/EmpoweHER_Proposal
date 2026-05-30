@@ -130,6 +130,7 @@
         <div class="playing-card" id="playingCard" onclick="flipCard()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' ')flipCard()">
           <div class="card-inner" id="cardInner">
             <div class="card-face front" id="cardFront">
+              <img id="cardFrontImg" class="card-bg-img" src="Risk.png" alt="" role="presentation">
               <div class="card-front-header" id="cardHeader">
                 <span class="card-type-badge" id="cardBadge">Risk Scenario</span>
                 <h3 id="cardTitle">Your partner says condoms break the mood.</h3>
@@ -449,7 +450,7 @@ function renderCard() {
     b.onclick = (e) => { e.stopPropagation(); chooseOption(i); };
     o.appendChild(b);
   });
-  document.getElementById('cardFront').style.backgroundImage = 'url(' + gameType.charAt(0).toUpperCase() + gameType.slice(1) + '.png)';
+  document.getElementById('cardFrontImg').src = gameType.charAt(0).toUpperCase() + gameType.slice(1) + '.png';
   document.getElementById('cardBack').className = 'card-face back card-' + gameType;
   document.getElementById('cardBackHeader').style.background = 'rgba(0,0,0,0.2)';
   const c = document.getElementById('cardCounter');
